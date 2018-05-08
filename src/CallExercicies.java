@@ -1,9 +1,10 @@
 public class CallExercicies {
 
     public static void main(String[] args) {
-        System.out.println(AsteriskExercicies.printInLine(3));
-        System.out.println(AsteriskExercicies.printCrashLine(3));
-        System.out.println(AsteriskExercicies.printCrashLineWithPreviusLine(3));
+     //   System.out.println(AsteriskExercicies.printInLine(3));
+       // System.out.println(AsteriskExercicies.printCrashLine(3));
+        //System.out.println(AsteriskExercicies.printCrashLineWithPreviusLine(3));
+        System.out.println(MakeDiamond.printDiamondByIndex(4));
 //        System.out.println(14 % 1);
 //        System.out.println(14 % 2);
 //        System.out.println(14 % 3);
