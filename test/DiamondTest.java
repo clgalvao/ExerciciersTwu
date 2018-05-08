@@ -12,4 +12,13 @@ public class DiamondTest {
                 " ***\n"+
                 "  *",MakeDiamond.printDiamondByIndex(3));
     }
+    @Test
+    public void printDiamondWithName()
+    {
+        Assert.assertEquals("  *\n" +
+                " ***\n" +
+                "Bill\n"+
+                " ***\n"+
+                "  *",MakeDiamond.printDiamondByIndexWithName(3));
+    }
 }

@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class NumbersExercicies {
     public static String fizzBuzzGame()
     {
@@ -18,17 +21,31 @@ public class NumbersExercicies {
     }
 
 
-    public static int[] returnFactorByNumber(int number)
+    public static List<Integer> returnFactorByNumber(int number)
     {
-        int[] factors = new int[]{};
+        List<Integer> factors = new ArrayList();
 
         for (int i = 2; i < number; i++) {
             if (isDivisibleByParameter(number,i))
             {
-//                factors.
+               factors.add(i);
+            }
+            if (checkMultiplier(number,factors) == number) {
+                i = number;
             }
         }
         return factors;
+    }
+
+    private static int checkMultiplier(int number, List<Integer> factors)
+    {
+        int finalNumber =1;
+
+        for(int multiplier : factors)
+        {
+            finalNumber *= multiplier;
+        }
+        return finalNumber;
     }
 
     private static boolean isDivisibleByParameter(int number, int divisor)
